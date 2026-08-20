@@ -95,7 +95,7 @@ Lake Banyoles (42.12°N, 2.76°E) looks perfectly safe from the shore. But every
 
 The question this workshop answers: **can we predict the safe swimming depth from weather data alone, without sending a boat out?**
 
-We build a hybrid model — process-based physics for the lake's thermal structure, random forest to correct what the physics gets wrong — and produce a depth-by-depth risk map for every ACA monitoring campaign.
+We build a hybrid model, process-based physics for the lake's thermal structure, random forest to correct what the physics gets wrong, and produce a depth-by-depth risk map for every ACA monitoring campaign.
 
 ---
 
@@ -117,14 +117,14 @@ Depth range: 0–100 m | 62 campaigns, 2023–2026
 
 ---
 
+## LLM use
+
+- Claude Sonnet 5 was used to create this workshop, mainly to provide support in coding, formatting and plotting.
+
+---
+
 ## Key references
 
 - Willard et al. (2022). Integrating Scientific Knowledge with ML. *SIAM Review*, 64(1).
 - Read et al. (2019). Process-guided deep learning of lake water temperature. *WRR*, 55.
 - Casamitjana & Roget (1993). Resuspension by focused groundwater in Lake Banyoles. *L&O*, 38(3).
-
----
-
-## LLM use
-
-- Claude Sonnet 5 was used to create this workshop, mainly to provide support in coding, formatting and plotting.
