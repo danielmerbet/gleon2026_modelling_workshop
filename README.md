@@ -127,4 +127,4 @@ Depth range: 0–100 m | 62 campaigns, 2023–2026
 
 ## LLM use
 
-- Claude Sonnet 5 was used to build this workshop, mainly to provide support in coding, formatting and plotting.
+- Claude Sonnet 5 was used to create this workshop, mainly to provide support in coding, formatting and plotting.
