@@ -1,8 +1,8 @@
 # Pre-workshop setup
 
 Please complete these steps **before arriving** at the workshop.  
-The session is hands-on from minute one — a working R environment saves everyone time.  
-Estimated setup time: **20–30 minutes**.
+A working R environment saves everyone time.  
+Estimated setup time: **10 minutes**.
 
 ---
 
@@ -27,7 +27,7 @@ Or download the ZIP from GitHub → **Code → Download ZIP**, then unzip.
 
 ## 3. Install R packages
 
-Run gleon-banyoles-workshop.Rproj
+Run gleon-banyoles-workshop.Rproj or open Rstudio and run the codes
 
 ```r
 source("00_packages.R")
