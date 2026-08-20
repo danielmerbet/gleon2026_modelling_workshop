@@ -18,7 +18,7 @@ Estimated setup time: **20–30 minutes**.
 ## 2. Get the workshop materials
 
 ```bash
-git clone https://github.com/danielmerbet/gleon2026_modelling_WS.git
+git clone https://github.com/danielmerbet/gleon2026_modelling_workshop.git
 ```
 
 Or download the ZIP from GitHub → **Code → Download ZIP**, then unzip.
@@ -30,7 +30,7 @@ Or download the ZIP from GitHub → **Code → Download ZIP**, then unzip.
 Run gleon-banyoles-workshop.Rproj
 
 ```r
-source("R/00_packages.R")
+source("00_packages.R")
 ```
 
 This installs anything missing and then loads all packages. You should see:
@@ -69,14 +69,6 @@ The workshop data is included in the repository. Check that these two files exis
 data/data.csv          # ACA monitoring data 2007–2024
 data/era5_banyoles.csv # ERA5 daily meteorological forcing
 ```
-
-If `era5_banyoles.csv` is missing (large file, may be excluded from ZIP downloads),
-run this once to download it automatically (requires internet, ~10 seconds):
-
-```r
-source("R/01b_era5_download.R")
-```
-
 ---
 
 
