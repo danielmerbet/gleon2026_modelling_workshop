@@ -14,6 +14,9 @@ data/banyoles_modelled.rds
 data/ml_models.rds
 data/model_params.rds
 
+# slides
+slides/*.pptx
+
 # OS
 .DS_Store
 Thumbs.db
