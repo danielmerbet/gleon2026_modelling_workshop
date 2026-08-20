@@ -27,11 +27,11 @@ Lake models are either physically grounded or data-driven. This workshop shows y
 | 0 | — | Introduction & story | 10 min |
 | 1 | `01b_era5_download.R`, `01c_prepare_data_validate.R`, `01_data.R` | Data creation | Before the meeting |
 | 2 | `02_explore.R` | Data exploration & swimmer risk thresholds | 30 min |
-| 3 | `03_process_model.R` | 1D process-based model & residuals | 20 min |
+| 3 | `03_process_model.R` | 1D process-based model & residuals | 30 min |
 | 4 | `04_ml_residuals.R` | Random forest on residuals (LOCO CV) | 20 min |
 | 5 | `05_hybrid_compare.R` | Risk map, limitations & discussion | 20 min |
 | 6 | `06_forecast_tomorrow.R` | Live next-day ensemble swimmer safety forecast | 20 min |
-| 7 | `07_validate_validate.R` | Independent validation (2023–2026) | 10 min |
+| 7 | `07_validate_independent.R` | Independent validation (2023–2026) | 10 min |
 
 **25 output figures** are saved to `outputs/` as the scripts run (01–25).
 
