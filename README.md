@@ -1,13 +1,13 @@
-# Is it safe to swim in Lake Banyoles during the GLEON meeting?
+# Is it safe to swim in Lake Banyoles during the GLEON meeting 2026?
 
-### Hybrid Lake Modelling with Process-Based Models and Machine Learning
+### Hybrid Lake Modelling and forecasting
 
 **GLEON Meeting · Banyoles · 31 August 2026**  
 Facilitator: Daniel Mercado-Bettín (CEAB-CSIC)  
-Duration: 2.5–3 hours | Language: R | Level: Intermediate
+Duration: 2.5-3 hours | Language: R | Level: Intermediate (but anyone can follow)
 
 ```bash
-git clone https://github.com/danielmerbet/gleon2026_modelling_WS.git
+git clone https://github.com/danielmerbet/gleon2026_modelling_workshop.git
 ```
 
 See [SETUP.md](SETUP.md) for full installation instructions.
@@ -16,7 +16,7 @@ See [SETUP.md](SETUP.md) for full installation instructions.
 
 ## Overview
 
-Lake models are either physically grounded or data-driven. This workshop shows you how to combine both, and how to put the result to work. Using **Lake Banyoles** (karstic, NE Spain) as a case study, participants build a simple process-based model, train a random forest on its residuals, and assemble a hybrid prediction. The payoff: a live next-day swimmer safety forecast, driven by Google DeepMind's WeatherNext 2 ensemble (64 members, via Open-Meteo), so it reports a probability of safe conditions at each depth, not just a single number — that classifies temperature and dissolved oxygen conditions from surface to 50 m depth. Hands-on R throughout.
+Lake models are either physically grounded or data-driven. This workshop shows you how to combine both, and how to put the result to work. Using **Lake Banyoles** (karstic, NE Spain) as a case study, participants build a simple process-based model, train a random forest on its residuals, and assemble a hybrid prediction. The payoff: a live next-day swimmer safety forecast, driven by Google DeepMind's WeatherNext 2 ensemble (64 members, via Open-Meteo), so it reports a probability of safe conditions at each depth, that classifies temperature and dissolved oxygen conditions from surface to 50 m depth. Hands-on R throughout.
 
 ---
 
@@ -46,15 +46,15 @@ gleon-banyoles-workshop/
 ├── 00_packages.R               # install and load all packages
 ├── 01_data.R                   # load ACA field data from data/data.csv
 ├── 01b_era5_download.R         # download ERA5 forcing from Open-Meteo
-├── 01c_prepare_data_validate.R    # consolidate independent temperature data to CSV
+├── 01c_prepare_data_validate.R # consolidate independent temperature data to CSV
 ├── model.R                     # shared process model 
 ├── utils.R                     # shared helper functions
-├── 02_explore.R                # Part 1 — data exploration & visualisation
-├── 03_process_model.R          # Part 2 — process-based model & residuals
-├── 04_ml_residuals.R           # Part 3 — random forest on residuals
-├── 05_hybrid_compare.R         # Part 4 — risk map, comparison & limitations
-├── 06_forecast_tomorrow.R      # Part 5 — live next-day ENSEMBLE swimmer safety forecast
-├── 07_validate_independent.R         # Part 6 — independent validation 
+├── 02_explore.R                # Part 2 — data exploration & visualisation
+├── 03_process_model.R          # Part 3 — process-based model & residuals
+├── 04_ml_residuals.R           # Part 4 — random forest on residuals
+├── 05_hybrid_compare.R         # Part 5 — risk map, comparison & limitations
+├── 06_forecast_tomorrow.R      # Part 6 — live next-day ENSEMBLE swimmer safety forecast
+├── 07_validate_independent.R   # Part 7 — independent validation 
 ├── app/
 │   └── app.R     # interactive Shiny model-tuning app
 ├── data/
@@ -74,7 +74,7 @@ gleon-banyoles-workshop/
 ## How to use
 
 1. Read `SETUP.md` and install packages **before** the workshop.
-2. Open in RStudio or run gleon-banyoles-workshop.Rproj
+2. Run gleon-banyoles-workshop.Rproj or open codes in RStudio
 3. Run `00_packages.R` to verify your setup.
 
 
@@ -85,7 +85,7 @@ After running Parts 2–3 once (to train the ML models), launch the Shiny app:
 shiny::runApp("app/process_playground")
 ```
 
-It allows to drag sliders for the physical parameters (air–water coupling, solar warming, thermocline sharpness, groundwater temperature, oxygen decline) and watch the fit to a real campaign update live. When the trained models are present, the **hybrid** prediction is overlaid — making the residual that ML learns visible at a glance. A great hands-on segue between Parts 2 and 3.
+It allows to drag sliders for the physical parameters (air-water coupling, solar warming, thermocline sharpness, groundwater temperature, oxygen decline) and watch the fit to a real campaign update live. 
 
 ---
 
