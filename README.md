@@ -125,6 +125,6 @@ Depth range: 0–100 m | 62 campaigns, 2023–2026
 
 ## Key references
 
-- Willard et al. (2022). Integrating Scientific Knowledge with ML. *SIAM Review*, 64(1).
-- Read et al. (2019). Process-guided deep learning of lake water temperature. *WRR*, 55.
-- Casamitjana & Roget (1993). Resuspension by focused groundwater in Lake Banyoles. *L&O*, 38(3).
+- Willard, J., Jia, X., Xu, S., Steinbach, M., & Kumar, V. (2022). Integrating scientific knowledge with machine learning for engineering and environmental systems. ACM Computing Surveys, 55(4), 1-37.
+- RRead, J. S., Jia, X., Willard, J., Appling, A. P., Zwart, J. A., Oliver, S. K., ... & Kumar, V. (2019). Process‐guided deep learning predictions of lake water temperature. Water Resources Research, 55(11), 9173-9190.
+- Casamitjana, X., & Roget, E. (1993). Resuspension of sediment by focused groundwater in Lake Banyoles. Limnology and Oceanography, 38(3), 643-656.
