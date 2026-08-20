@@ -1,0 +1,7 @@
+We did many thanigs wrong, but we have learned some things.
+In typical workshop, everything works perfectly, not in this one:
+- We are probably swimming in point C, not A, but we do not have enough data there.
+- The oxygen validation is really poor because the data in the last years is scarse, so we do not know if the ML approach is overfitting or now in a complete different splitted range. 
+- Taking an independent data from the same case study, and trying to validate the workflow (07_validate_vilar.R) we discovered that the ML training is deficient, and it is probably overfitting (lack of generalization). In this case is better to trust only in the process-based model.
+ 
+ 

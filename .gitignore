@@ -1,0 +1,19 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+Rplots.pdf
+
+# Outputs (reproducible from scripts)
+outputs/*.png
+outputs/*.pdf
+
+# Intermediate RDS (reproducible from scripts — run 03 and 04 to regenerate)
+data/aca_modelled_train.rds
+data/banyoles_modelled.rds
+data/ml_models.rds
+data/model_params.rds
+
+# OS
+.DS_Store
+Thumbs.db
